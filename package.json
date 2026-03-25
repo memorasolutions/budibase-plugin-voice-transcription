@@ -1,0 +1,30 @@
+{
+  "name": "budibase-plugin-voice-transcription",
+  "version": "1.0.0",
+  "description": "Plugin Budibase de transcription vocale en temps réel via Web Speech API. Auteur : MEMORA solutions (https://memora.solutions ; info@memora.ca)",
+  "license": "MIT",
+  "author": "MEMORA solutions <info@memora.ca> (https://memora.solutions)",
+  "svelte": "index.js",
+  "module": "dist/plugin.min.js",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -cw"
+  },
+  "dependencies": {
+    "@budibase/bbui": "^2.0.6",
+    "@crownframework/svelte-error-boundary": "^1.0.3",
+    "svelte": "^3.49.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "postcss": "^8.2.10",
+    "rollup": "^2.44.0",
+    "rollup-plugin-copy2": "^0.3.1",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-svelte": "^7.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "tar": "^6.1.11"
+  }
+}

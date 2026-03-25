@@ -1,0 +1,65 @@
+{
+  "type": "component",
+  "metadata": {
+    "name": "Voice Transcription",
+    "icon": "VoiceOver",
+    "category": "Form",
+    "author": "MEMORA solutions",
+    "url": "https://memora.solutions"
+  },
+  "schema": {
+    "name": "budibase-plugin-voice-transcription",
+    "friendlyName": "Transcription vocale",
+    "description": "Transcription vocale en temps réel via Web Speech API. Auteur : MEMORA solutions (https://memora.solutions)",
+    "icon": "VoiceOver",
+    "settings": [
+      {
+        "type": "field/string",
+        "key": "field",
+        "label": "Champ",
+        "required": true
+      },
+      {
+        "type": "text",
+        "key": "label",
+        "label": "Libellé",
+        "defaultValue": "Description vocale"
+      },
+      {
+        "type": "select",
+        "key": "lang",
+        "label": "Langue",
+        "options": [
+          {
+            "label": "Francais (Canada)",
+            "value": "fr-CA"
+          },
+          {
+            "label": "Francais (France)",
+            "value": "fr-FR"
+          },
+          {
+            "label": "English (Canada)",
+            "value": "en-CA"
+          },
+          {
+            "label": "English (US)",
+            "value": "en-US"
+          }
+        ],
+        "defaultValue": "fr-CA"
+      },
+      {
+        "type": "text",
+        "key": "placeholder",
+        "label": "Placeholder",
+        "defaultValue": "Appuyez sur le micro et parlez..."
+      },
+      {
+        "type": "boolean",
+        "key": "disabled",
+        "label": "Désactivé"
+      }
+    ]
+  }
+}
