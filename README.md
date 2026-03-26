@@ -166,6 +166,31 @@ Les contributions sont les bienvenues. Pour contribuer :
 
 **L'attribution MEMORA solutions doit être conservée dans tout fork ou distribution.**
 
+## Vie privée et conformité / Privacy and compliance
+
+**FR** - L'audio capté par le microphone est transmis aux serveurs de **Google** (Chrome/Edge) ou **Apple** (Safari) via la Web Speech API du navigateur pour transcription. Le plugin ne stocke aucune donnée audio ni aucune transcription.
+
+**EN** - Audio captured by the microphone is sent to **Google** (Chrome/Edge) or **Apple** (Safari) servers through the browser's Web Speech API for transcription. The plugin itself does not store any audio or transcript data.
+
+- Un consentement explicite est demandé avant la première activation du microphone (par session).
+- Explicit user consent is required before the first microphone activation (per session).
+
+> **Organisations gouvernementales, scolaires ou réglementées (loi 25, RGPD...)**
+>
+> - L'utilisation de ce plugin implique un **partage de données vocales avec un tiers** (Google/Apple).
+> - Évaluez si ce partage est conforme à vos politiques internes de vie privée.
+> - Une **approbation de la direction TI** peut être requise avant tout déploiement.
+> - Documentez l'utilisation du plugin dans votre **registre de traitement des données personnelles**.
+>
+> **Government, education, or regulated organizations (GDPR, CCPA...)**
+>
+> - Using this plugin involves **sharing voice data with a third party** (Google/Apple).
+> - Assess whether this sharing complies with your internal privacy policies.
+> - **IT management approval** may be required before deployment.
+> - Document the plugin usage in your **personal data processing registry**.
+
+**Alternative** : pour un traitement 100% local / for fully on-device processing, consider integrating [Whisper](https://github.com/openai/whisper) or [Vosk](https://alphacephei.com/vosk/).
+
 ## Licence
 
 [MIT](LICENSE) - utilisation et modification autorisees.
