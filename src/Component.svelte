@@ -69,6 +69,9 @@
       return
     }
 
+    // Restore consent from sessionStorage (survives page navigation, not browser close)
+    consentGiven = typeof sessionStorage !== 'undefined' && sessionStorage.getItem('vt-consent') === 'true'
+
     recognition = new SpeechRecognition()
     recognition.continuous = true
     recognition.interimResults = true
@@ -129,6 +132,7 @@
   function acceptConsent() {
     consentGiven = true
     showConsentDialog = false
+    try { sessionStorage.setItem('vt-consent', 'true') } catch(e) {}
     startListening()
   }
 
